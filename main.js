@@ -1,8 +1,11 @@
-console.log('Hello ' + 'world!' + 66);// строка всегда в кавычках
-console.log(666);
-console.log(2+2);
-console.log(9);
-console.log('Добро '+'пожаловать'+'на курс'+' Алексей');
+// console.log('Hello ' + 'world!' + 66);// строка всегда в кавычках
+// console.log(666);
+// console.log(2+2);
+// console.log(9);
+// console.log('Добро '+'пожаловать'+'на курс'+' Алексей');
+
+// document.getElementById('one').innerHTML = 'Hello World'
+
 // alert('09.04.23');
 // let a = Infinity
 // console.log(1/0);
@@ -26,12 +29,15 @@ console.log('Добро '+'пожаловать'+'на курс'+' Алексе�
 // let a;
 // console.log(a);
 
-typeof
-typeof x 
-typeof(x)
-console.log(typeof'cat');
-console.log(typeof 2);
-console.log(typeof true);
-console.log(typeof 10n);
-console.log(typeof undefined);
-console.log(typeof null);
+// typeof
+// typeof x 
+// typeof(x)
+// console.log(typeof'cat');
+// console.log(typeof 2);
+// console.log(typeof true);
+// console.log(typeof 10n);
+// console.log(typeof undefined);
+// console.log(typeof null);
+
+document.querySelector('#one').innerHTML = 666
+
