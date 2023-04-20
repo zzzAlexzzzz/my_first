@@ -125,17 +125,17 @@
 
 
 
-let sr = prompt("больше 15")
+// let sr = prompt("больше 15")
 
-if(sr > 15){
-    console.log('да');
-}
-else if(sr < 15){
-    console.log('нет');
-}
-else{
-    console.log('равно');
-}
+// if(sr > 15){
+//     console.log('да');
+// }
+// else if(sr < 15){
+//     console.log('нет');
+// }
+// else{
+//     console.log('равно');
+// }
 
 // let a = 10
 // let b = 5
@@ -172,3 +172,83 @@ else{
 
 // let result = (c === d);
 // console.log(result);
+
+                                       // Занятие 5. Циклы
+
+// let i = 0;
+
+// while(i<13){
+//     console.log(i);
+//     i+=3
+// }
+
+// ключевое слово do{
+//     тело цикла
+//     } ключевое слово while(условие)
+
+// ключевое слово for(начало; условие; шаг;){
+//     тело цикла
+
+// for(let i = 0; i < 20;i+=2){
+//     console.log(i);
+
+// (Если условие == true -> Выполнить тело, Выполнить шаг)
+// (Если условие == true -> Выполнить тело, Выполнить шаг)
+// (Если условие == true -> Выполнить тело, Выполнить шаг)
+// ......
+
+// выполняем начало
+// let i = 0;
+// Если условие == true -> Выполнить тело, Выполнить шаг
+// if(i<3){console.log(i)};i++
+// Если условие == true -> Выполнить тело, Выполнить шаг
+// if(i<3){console.log(i)};i++
+// Если условие == true -> Выполнить тело, Выполнить шаг
+// if(i<3){console.log(i)};i++
+// Если условие == true -> Выполнить тело, Выполнить шаг
+// конец цикла
+
+// let i = 0
+// for(;;){
+// console.log(i++);
+// if(i>10) break;
+// console.log(i+10);
+// }
+
+// for(let i = 2500; i < 3000; i++){
+//     if(i % 2 ==0 )continue;
+//     console.log(i);
+//     }
+ 
+                                            //  ДЗ  
+
+// let i = 1;
+// while(i < 51){
+//     console.log(i);
+//     i++
+// }
+
+// for(let i = 1; i < 51; i++){
+//     console.log(i);
+// }
+
+// let i = 50;
+// while(i > 24){
+//     console.log(i);
+//     i--
+// }
+
+// for(let i = 50; i > 24; i--){
+//     console.log(i);
+// }
+
+// for(let i = 2500; i < 3000; i++){
+//     if(i % 2 ==0 )continue;
+//     console.log(i);
+//     }
+
+for(let i = 2500; i < 3002; i++){
+    if(i % 2 == 0 ){
+    console.log(i);
+    }
+    }
