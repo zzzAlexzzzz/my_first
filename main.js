@@ -247,8 +247,89 @@
 //     console.log(i);
 //     }
 
-for(let i = 2500; i < 3002; i++){
-    if(i % 2 == 0 ){
-    console.log(i);
-    }
-    }
+// for(let i = 2500; i < 3002; i++){
+//     if(i % 2 == 0 ){
+//     console.log(i);
+//     }
+//     }
+
+                                           //Занятие 6. Switch case
+
+// let a = '1';
+// let b = 0;
+// switch(+a){
+// case b + 1:
+// console.log('Выполнится потому как значением +а, будет в точности равно и + 1');
+// break
+// default:
+// console.log('Это не выполнится ');
+// }
+// let c = + a
+// console.log();
+
+
+// let a = 5;
+// switch(a){
+// case 12:
+// alert('Правильно');
+// break
+
+// case 5:
+// case 10:
+// alert(1)
+// break
+// alert(2)
+// break
+// default:
+// alert('результат кривой однознанчно')
+// }
+
+                                           //ДЗ
+
+// let a = 1;
+// let b = +prompt('Введите число от 1 до 4')
+// switch(a+b){
+//     case 1:
+//         alert('нет')
+//         break
+//     case 2:
+//         alert('нет')
+//         break
+//     case 3:
+//         alert('нет')
+//         break
+//     case 4:
+//         alert('да') 
+//         break
+//     default:
+//         alert('Не сработало')       
+// }
+ 
+
+// let a = +prompt('времена года')
+// switch(a){
+//     case 1:
+//     case 2:
+//     case 3:
+//         alert('зима')
+//         break
+//     case 4:
+//     case 5:
+//     case 6:
+//         alert('весна')
+//         break
+//     case 7:
+//     case 8:
+//     case 9:
+//         alert('лето')
+//         break
+//     case 10:
+//     case 11:
+//     case 12:
+//         alert('осень')
+// }
+
+// let a = 'пользователь'
+// let b = null
+// let c = 'аноним'
+// alert(a ?? b ?? c)
