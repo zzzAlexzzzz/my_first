@@ -329,7 +329,7 @@
 //         alert('осень')
 // }
 
-// let a = 'пользователь'
-// let b = null
-// let c = 'аноним'
-// alert(a ?? b ?? c)
+let a = 'пользователь'
+let b = null
+let c = 'аноним'
+alert(a ?? b ?? c)
