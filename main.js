@@ -329,7 +329,113 @@
 //         alert('осень')
 // }
 
-let a = 'пользователь'
-let b = null
-let c = 'аноним'
-alert(a ?? b ?? c)
+// let a = 'пользователь'
+// let b = null
+// let c = 'аноним'
+// alert(a ?? b ?? c)
+
+                            //  Занятие 7. Функции
+
+
+ // function decloration
+//
+// ключевое слово function название функции(параметры){
+//     тело функции
+//     }
+//     function one(){
+//     console.log('Наша первая осознанная функция');
+//     }
+
+
+// let i = 0
+// function one(){
+// console.log('Наша первая осознанная функция');
+// alert('Ты нажал кнопку ' + i + ' раз')
+// i+=1
+// }
+
+// let btn = document.querySelector('.check')
+
+// btn.onclick = one
+
+
+// let a = 12
+// let b = 118
+
+// function multiply(){
+// return a + b
+
+// }
+// multiply()
+
+
+// let a = prompt('Ваше имя?')
+// function mlt(x,y){
+// return x + y
+// }
+// let c = mlt('Добро пожаловать ', a )
+// console.log(c);
+
+
+// function decloration
+// function one(){
+//     console.log('Это function decloration');
+    
+//     }
+//     // function expreshen
+//     let two = function(){
+//     console.log('Это function expreshen');
+//     }
+//     // Стрелочная функция
+//     let there = () =>{
+//     console.log('Стрелочная функция');
+//     }
+
+                                               // ДЗ
+
+
+// let a = 'кнопку'
+// function one(){
+//     alert('ты нажал ' + a)
+// }
+// let btn = document.querySelector('.plus')
+// btn.onclick = one
+
+
+
+// let plus = function(){
+//     let a = +document.querySelector('.num1').value;
+//     let b = +document.querySelector('.num2').value;
+//     alert(a + b)
+    
+// }
+// let btn = document.querySelector('.plus')
+// btn.onclick = plus
+
+
+// let minus = function(){
+//     let a = +document.querySelector('.num1').value;
+//     let b = +document.querySelector('.num2').value;
+//     alert(a - b)
+
+// }
+// let btn2 = document.querySelector('.minus')
+// btn2.onclick = minus
+
+// let umnoj = function(){
+//     let a = +document.querySelector('.num1').value;
+//     let b = +document.querySelector('.num2').value;
+//     alert(a * b)
+
+// }
+// let btn3 = document.querySelector('.umnoj')
+// btn3.onclick = umnoj
+
+// let delenie = function(){
+//     let a = +document.querySelector('.num1').value;
+//     let b = +document.querySelector('.num2').value;
+//     alert(a / b)
+
+// }
+// let btn4 = document.querySelector('.delenie')
+// btn4.onclick = delenie
