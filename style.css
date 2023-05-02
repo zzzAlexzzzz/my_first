@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(87, 42, 172);
+}
+.wid{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(21, 22, 22);
+    color: rgb(255, 6, 130);
+}
+
+.element{
+    text-align: center;
+    color: aliceblue;
+}
+
+.bod{
+    background-color: blue;
+}
+
+.col{
+    color: black;
+}

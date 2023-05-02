@@ -439,3 +439,38 @@
 // }
 // let btn4 = document.querySelector('.delenie')
 // btn4.onclick = delenie
+
+                                //  Занятие 8. DOM
+
+// const btn = document.querySelector('.btn')
+// const body = document.querySelector('body')
+// btn.onclick = function (){
+// body.classList.toggle('bodys')
+// btn.style.color = 'white'
+// }
+
+// let genre = document.querySelectorAll('.genre')
+// for(let i = 0; i<genre.length;i++){
+// genre[i].onclick = function(){
+// let shop = document.querySelector('.shop').value
+// let price = this.getAttribute('data')
+// let out = document.querySelector('.out')
+// out.innerHTML = shop * price
+// console.log(shop * price);
+
+// shop.innerHTML = ''
+
+// }
+
+                  //ДЗ
+
+const btn = document.querySelector('.plus')
+const ele = document.querySelector('.element')
+btn.onclick = function (){
+    ele.classList.add('wid')
+    btn.classList.toggle('wid')
+    btn.classList.toggle('bod')
+    btn.classList.toggle('col')
+}
+
+
