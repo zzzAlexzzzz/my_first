@@ -604,26 +604,62 @@
 
 
 
-    let a = [
-        [1,2,3],
-        [4,5,6],
-        [7,8,9]
-    ]
+//     let a = [
+//         [1,2,3],
+//         [4,5,6],
+//         [7,8,9]
+//     ]
+// let one = '';
+// function mas (){
+//     for(let i = 0; a.length > i; i++){
+//     let c = a[i]
+//     for(let j = c.length - 1; j >= 0; j--){
+//         console.log(c[j]);
+//         one += a[i][j] + ''
+//     }
+//     }
+//     document.querySelector('.one').innerHTML = one
+//     }
 
-//     for(let i = 0; a.length>i; i++){
-//         let c = a[i]
-//         for(let j = c.length - 1; j >= 0; j--){
-//             console.log(c[j]);
-// }
 
-// }
-function mas (){
-    for(let i = 0; a.length > i; i++){
-    let c = a[i]
-    for(let j = c.length - 1; j >= 0; j--){
-        console.log(c[j]);
-        
-    }
-    }
-    document.querySelector('.one').innerHTML = a
-    }
+
+                                              // Занятие 10. API
+
+
+// fetch('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=477d53b8451ca5c93b7fae37eb431d1b';)
+// .then(function(resp){return resp.json()})
+// .then(function(data){
+// document.querySelector('.city-name').textContent = data.name
+// document.querySelector('.temp').textContent = Math.round((data.main.temp -273) ) + '°C'
+// console.log(data);
+// }) 
+
+// fetch('https://api.openweathermap.org/data/2.5/weather?lat=52.17&lon=104.17&appid=477d53b8451ca5c93b7fae37eb431d1b';)
+// .then(function(resp){return resp.json()})
+// .then(function(data){
+// document.querySelector('.city-name').textContent = data.name
+// document.querySelector('.temp').textContent = Math.round((data.main.temp -273) ) + '°C'
+// document.querySelector('.weather').textContent = data.weather[0]['description']
+// document.querySelector('.icon').innerHTML = `<img src ='https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png'>`
+// console.log(data);
+// })
+
+                                                      // ДЗ
+
+// a86de39d5ad5084bae32135e34c9c422
+
+fetch('https://api.openweathermap.org/data/2.5/weather?lat=58.50&lon=56.56&appid=a86de39d5ad5084bae32135e34c9c422')
+.then(function(resp){return resp.json()})
+.then(function(data){
+    document.querySelector('.one').textContent = data.name
+    document.querySelector('.temp').textContent = Math.round((data.main.temp -273)) + '°C'
+    document.querySelector('.weather').textContent = data.weather[0]['description']
+    document.querySelector('.icon').innerHTML = `<img src ='https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png'>`
+    document.querySelector('.wind').textContent = data.wind.speed + 'м\с'
+    document.querySelector('.humidity').textContent = data.main.humidity
+    document.querySelector('.country').textContent = data.sys.country
+    document.querySelector('.sunrise').textContent = data.sys.sunrise
+    document.querySelector('.sunset').textContent = data.sys.sunset
+    console.log(data);
+})
+
