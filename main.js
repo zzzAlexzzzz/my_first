@@ -173,7 +173,7 @@
 // let result = (c === d);
 // console.log(result);
 
-                                       // Занятие 5. Циклы
+                                                     // Занятие 5. Циклы
 
 // let i = 0;
 
@@ -220,7 +220,7 @@
 //     console.log(i);
 //     }
  
-                                            //  ДЗ  
+                                                             //  ДЗ  
 
 // let i = 1;
 // while(i < 51){
@@ -253,7 +253,7 @@
 //     }
 //     }
 
-                                           //Занятие 6. Switch case
+                                                    //Занятие 6. Switch case
 
 // let a = '1';
 // let b = 0;
@@ -284,7 +284,7 @@
 // alert('результат кривой однознанчно')
 // }
 
-                                           //ДЗ
+                                                          //ДЗ
 
 // let a = 1;
 // let b = +prompt('Введите число от 1 до 4')
@@ -334,7 +334,7 @@
 // let c = 'аноним'
 // alert(a ?? b ?? c)
 
-                            //  Занятие 7. Функции
+                                               //  Занятие 7. Функции
 
 
  // function decloration
@@ -391,7 +391,7 @@
 //     console.log('Стрелочная функция');
 //     }
 
-                                               // ДЗ
+                                                                // ДЗ
 
 
 // let a = 'кнопку'
@@ -440,7 +440,7 @@
 // let btn4 = document.querySelector('.delenie')
 // btn4.onclick = delenie
 
-                                //  Занятие 8. DOM
+                                                  //  Занятие 8. DOM
 
 // const btn = document.querySelector('.btn')
 // const body = document.querySelector('body')
@@ -462,15 +462,168 @@
 
 // }
 
-                  //ДЗ
+                                                                 //ДЗ
 
-const btn = document.querySelector('.plus')
-const ele = document.querySelector('.element')
-btn.onclick = function (){
-    ele.classList.add('wid')
-    btn.classList.toggle('wid')
-    btn.classList.toggle('bod')
-    btn.classList.toggle('col')
-}
+// const btn = document.querySelector('.plus')
+// const ele = document.querySelector('.element')
+// btn.onclick = function (){
+//     ele.classList.add('wid')
+//     btn.classList.toggle('wid')
+//     btn.classList.toggle('bod')
+//     btn.classList.toggle('col')
+// }
 
 
+
+                                   // Занятие 9. Массивы
+
+
+
+
+// let a = 'Anime'
+// let b = true
+// let c = 'Ты добавил это через переменную';
+
+// let a = ['a','b','c','d']
+// const b = [1,2,3,4,5,6,7,8]
+
+// console.log(a.length);
+// console.log(a.push('qwe','asdd', c));
+// console.log(a.push(true));
+
+// console.log(a);
+// b.push('Тимур')
+
+// console.log(b);
+// b.pop()
+// console.log(b.pop());
+// console.log(b);
+// b.splice(3, 4, 'Ничего себе')
+// console.log(b);
+
+// console.log(b);
+
+// let a = [1,2,3,4,5]
+
+// let b = [
+// [1,2,3],
+// [4,5,6],
+// [7,8,9]
+// ]
+
+// console.log(b[2][1]);
+
+// for(let i = 0; b.length>i; i++){
+// let c = b[i]// с = массив 123
+// // console.log(b[i]);
+// for(let j = c.length -1; j>=0;j--){
+// console.log(c[j]);
+// }
+
+// }
+
+// for(let i = 0; b.length>i; i++){
+//     for(let j = 0; j<b[i].length ;j++){
+//     console.log(b[i][j]);
+//     }
+    
+//     }
+
+// let b = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+//     ]
+    
+    // for(let i = 0; b.length>i; i++){
+    // let c = b[i]// с = массив 123
+    // // console.log(b[i]);
+    // for(let j = c.length -1; j>=0;j--){
+    // console.log(c[j]);
+    // }
+    
+    // }
+    
+    // let out = '';
+    // for(let i = 0; b.length>i; i++){
+    // for(let j = 0; j<b[i].length;j++){
+    // console.log(b[i][j]);
+    // if(b[i][j]>4){
+    // out += b[i][j] + ''
+    // out+='<br> '
+    // }
+    // }
+    
+    // }
+    // document.querySelector('.out').innerHTML = out
+
+
+                                                          //  ДЗ
+
+    // let a = [1,2,3,4,5,6,7,8,9,10,11,12]
+    // console.log(a);
+    // console.log(a[4]);
+
+
+    // function mas (){
+    //     document.querySelector('.one').innerHTML = a[4]
+    // }
+
+
+    // function mas (){
+    //     a.splice(0,1)
+    //     a.splice(1,1)
+    //     a.splice(2,1)
+    //     a.splice(3,1)
+    //     a.splice(4,1)
+    //     a.splice(5,1)
+    //     document.querySelector('.one').innerHTML = a
+    // }
+
+    // function mas (){
+    //     a.splice(1,1)
+    //     a.splice(2,1)
+    //     a.splice(3,1)
+    //     a.splice(4,1)
+    //     a.splice(5,1)
+    //     a.splice(6,1)
+    //     document.querySelector('.one').innerHTML = a
+    // }
+
+
+
+
+                   //здесь не понимаю как вывести на страницу по кнопке
+    // function mas (){
+    //     for(let i = 0; a.length > i; i++)
+    //     if(i % 2 == 0 )
+    //     console.log(i);
+    // }
+    
+    // document.querySelector('.one').innerHTML = i
+
+
+
+    let a = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]
+
+//     for(let i = 0; a.length>i; i++){
+//         let c = a[i]
+//         for(let j = c.length - 1; j >= 0; j--){
+//             console.log(c[j]);
+// }
+
+// }
+function mas (){
+    for(let i = 0; a.length > i; i++){
+    let c = a[i]
+    for(let j = c.length - 1; j >= 0; j--){
+        console.log(c[j]);
+        
+    }
+    }
+    document.querySelector('.one').innerHTML = a
+    }
