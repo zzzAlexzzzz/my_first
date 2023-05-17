@@ -646,20 +646,129 @@
 
                                                       // ДЗ
 
-// a86de39d5ad5084bae32135e34c9c422
 
-fetch('https://api.openweathermap.org/data/2.5/weather?lat=58.50&lon=56.56&appid=a86de39d5ad5084bae32135e34c9c422')
-.then(function(resp){return resp.json()})
-.then(function(data){
-    document.querySelector('.one').textContent = data.name
-    document.querySelector('.temp').textContent = Math.round((data.main.temp -273)) + '°C'
-    document.querySelector('.weather').textContent = data.weather[0]['description']
-    document.querySelector('.icon').innerHTML = `<img src ='https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png'>`
-    document.querySelector('.wind').textContent = data.wind.speed + 'м\с'
-    document.querySelector('.humidity').textContent = data.main.humidity
-    document.querySelector('.country').textContent = data.sys.country
-    document.querySelector('.sunrise').textContent = data.sys.sunrise
-    document.querySelector('.sunset').textContent = data.sys.sunset
-    console.log(data);
-})
 
+// fetch('https://api.openweathermap.org/data/2.5/weather?lat=58.50&lon=56.56&appid=a86de39d5ad5084bae32135e34c9c422')
+// .then(function(resp){return resp.json()})
+// .then(function(data){
+//     document.querySelector('.one').textContent = data.name
+//     document.querySelector('.temp').textContent = Math.round((data.main.temp -273)) + '°C'
+//     document.querySelector('.weather').textContent = data.weather[0]['description']
+//     document.querySelector('.icon').innerHTML = `<img src ='https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png'>`
+//     document.querySelector('.wind').textContent = data.wind.speed + 'м\с'
+//     document.querySelector('.humidity').textContent = data.main.humidity
+//     document.querySelector('.country').textContent = data.sys.country
+//     document.querySelector('.sunrise').textContent = data.sys.sunrise
+//     document.querySelector('.sunset').textContent = data.sys.sunset
+//     console.log(data);
+// })
+
+                                                           // Занятие 11. Promise
+
+// let a = new Set();
+// a.add(666)
+// console.log(a);
+
+
+// let a = new Set();
+// let b = [1,2,3,4,5,6,6,7,7,7,7,7,7,7,7,7,7,8]
+// a.add('Строка')
+
+// a.add('строка')
+// a.add(12)
+// a.add(43)
+// // a.clear()
+// // a.delete('Строка1')
+
+// a.add(82)
+
+// console.log(a);
+// console.log(a.has('Строка'))
+// console.log(a.size);
+// for(let i of a) {
+// console.log(i);
+// }
+
+
+// let c = 24
+// let d = (1 +'2') * 2
+
+// let b = [c,d]
+
+// let a = new Set(b);
+
+// for(let i of a) {
+// console.log(i);
+// }
+
+// let b = [1,2,3,4,5,6,6,7,7,7,7,7,7,7,7,7,7,8]
+
+// let a = new Set(b);
+
+// for(let i of a) {
+// console.log(i);
+// }
+// for(let i = 0; i<b.length;i++){
+// console.log(b[i]);
+// }
+
+// for(let key in b){
+// console.log(b[key]);
+// }
+
+// for(let key of b){
+// console.log(key);
+// }
+
+                                                                 // ДЗ
+
+
+// let a = new Set()
+// a.add('e')
+// a.add('r')
+// a.add('i')
+// a.add('k')
+// a.add('t')
+// a.add('h')
+// a.add('e')
+// a.add('b')
+// a.add('e')
+// a.add('s')
+// a.add('t')
+// console.log(a);
+
+
+// let inp = document.querySelector('.text')
+// let btn = document.querySelector('.plus')
+// let one = document.querySelector('.one')
+// btn.onclick = function() {
+//     let e = inp.value
+//     one.innerHTML = e 
+// }
+ 
+
+let a = [0,1,2,3,4,5,5,5,6,7,8,9]
+let b = new Set(a)
+console.log(b);
+
+// let inp = document.querySelector('.text')
+// let btn = document.querySelector('.plus')
+// let one = document.querySelector('.one')
+
+// btn.onclick = function() {
+//     let c = inp.value
+//     console.log(b.has(c));   // не могу понять как проверить масив
+//     one.innerHTML = c
+
+// }
+
+
+
+let btn = document.querySelector('.plus')
+let one = document.querySelector('.one')
+
+btn.onclick = function(){
+    for(let i of b) {
+        console.log(i);
+    }
+}
