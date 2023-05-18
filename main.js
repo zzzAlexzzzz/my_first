@@ -747,9 +747,9 @@
 // }
  
 
-let a = [0,1,2,3,4,5,5,5,6,7,8,9]
-let b = new Set(a)
-console.log(b);
+// let a = [0,1,2,3,4,5,5,5,6,7,8,9]
+// let b = new Set(a)
+// console.log(b);
 
 // let inp = document.querySelector('.text')
 // let btn = document.querySelector('.plus')
@@ -764,11 +764,99 @@ console.log(b);
 
 
 
-let btn = document.querySelector('.plus')
-let one = document.querySelector('.one')
+// let btn = document.querySelector('.plus')
 
-btn.onclick = function(){
-    for(let i of b) {
-        console.log(i);
-    }
-}
+// btn.onclick = function(){
+//     for(let i of b) {
+//         console.log(i);
+//     }
+// }
+
+
+                                                                       //Занятие 12. DOM
+
+// document.querySelector('.one').onclick = function(event) {
+//     console.log(event);
+//     console.log('Это первый блок');
+    
+//     }
+//     document.querySelector('.two').oncontextmenu = function(){
+//     console.log('Блок 2');
+//     return false
+//     }
+//     let width = 100
+//     document.querySelector('.there').onmousemove = function () {
+//     document.querySelector('.there').style.width = width +'px'
+//     width++
+//     }
+
+
+// document.querySelector('.there').onmouseleave = function (){
+//     document.querySelector('.there').style.background = 'white'
+//     }
+
+
+// document.querySelector('.there').onmouseenter = function () {
+//     document.querySelector('.there').style.background ='pink'
+//     }
+//     document.querySelector('.there').onmouseleave = function (){
+//     document.querySelector('.there').style.background = 'white'
+//     }
+    
+//     document.querySelector('.there').onmousedown = function(){
+//     document.querySelector('.there').style.background = 'red'
+//     }
+    
+//     document.querySelector('.there').onmouseup = function() {
+//     document.querySelector('.there').style.background = 'green'
+//     }
+
+
+// document.querySelector('.inp1').onkeypress = function(event){
+//     console.log(event);
+//     console.log(event.charCode);
+//     console.log(event.code);
+//     console.log(event.keyCode);
+//     console.log(event.key);
+//     }
+
+// document.querySelector('.inp1').onkeyup = function(event){
+//     console.log(event);
+//     console.log(event.charCode);
+//     console.log(event.code);
+//     console.log(event.keyCode);
+//     console.log(event.key);
+//     }
+
+
+                                                                    //ДЗ
+
+// let width = 50
+// let height = 50
+// document.querySelector('.one').onclick = function(e) {
+//     document.querySelector('.one').style.width =  width + '15px'
+//     document.querySelector('.one').style.height = height + '15px'
+// }                                          // почему прибавляет не по 15px?
+
+
+// document.querySelector('.temp').ondblclick = function(e) {
+//     // console.log(document.querySelector('.temp'));
+//     let a = document.querySelector('.temp').innerHTML
+//     console.log(a);   
+// }
+
+
+// document.querySelector('.icon').onclick = function(e) {
+//     document.querySelector('.icon').innerHTML = `<img src = 'https://3d-linker.ru/components/com_jshopping/files/img_products/plitkaleopard-2.jpg'>`
+// }
+
+
+// let inp = document.querySelector('.inp')
+// let btn = document.querySelector('.plus')
+// let one = document.querySelector('.one')
+
+// btn.onclick = function(e) {
+//     let a = inp.value 
+//     console.log(typeof(a));   // все вводимые даные string
+//     document.querySelector('.one').innerHTML = 'false'
+// } // не могу понять как проверить 
