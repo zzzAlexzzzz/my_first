@@ -890,15 +890,65 @@
 // console.log(typeof b);
 // }
 
-let a = new XMLHttpRequest()
-a.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200){
-        mufunc(this.responseText)
+// let a = new XMLHttpRequest()
+// a.onreadystatechange = function(){
+//     if(this.readyState == 4 && this.status == 200){
+//         mufunc(this.responseText)
 
-    }
-}
-a.open('GET','https://automarine25.ru/')
-a.send()
-function mufunc(data){
-    console.log(data);
-}
+//     }
+// }
+// a.open('GET','https://automarine25.ru/')
+// a.send()
+// function mufunc(data){
+//     console.log(data);
+// }
+
+
+                                                       //Занятие 14. Сетевые запросы
+
+// fetch('http://127.0.0.1:5500/')
+// .then(data =>{
+//     console.log(data);
+//     data.text().then(data2 =>{
+//         console.log(data2);
+//     })
+// })
+
+// fetch('http://127.0.0.1:5500/')
+// .then(data =>{
+//     console.log(data);
+//     return data.text()
+// })
+// .then(data =>{
+//     console.log(data);
+// })
+
+// fetch('http://127.0.0.1:5500/')
+// .then(data => data.text())
+// .then(data =>{
+//     console.log(data);
+// })
+
+// let a = new Promise((resolve, reject) =>{
+//     fetch('http://127.0.0.1:5500/')
+//     .then(data =>{
+//         resolve(data.text())
+//     })
+// })
+
+// let b = new Promise((resolve, reject) =>{
+//     fetch('http://127.0.0.1:5500/')
+//     .then(data =>{
+//         resolve(data.text())
+//     })
+// })
+
+// a.then(data =>{
+//     console.log(data);
+// })
+
+// Promise.all([a,b]).then(data =>{
+//     console.log(data);
+// })
+
+// CORS Unblock
