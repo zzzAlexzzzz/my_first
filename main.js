@@ -857,6 +857,48 @@
 
 // btn.onclick = function(e) {
 //     let a = inp.value 
-//     console.log(typeof(a));   // все вводимые даные string
-//     document.querySelector('.one').innerHTML = 'false'
-// } // не могу понять как проверить 
+//     console.log(typeof(a));  
+//     if(isNaN(+a)) {
+//         one.innerHTML = 'true'
+//     } 
+//     else {
+//         one.innerHTML = 'false'
+//     }
+// }
+
+                         // Занятие 13. Интерфейсы: формы, бинарные данные, веб-компонент
+
+//let a = [1,2,3]
+//console.log(typeof a);
+//localStorage.setItem('data',JSON.stringify(a))
+//document.querySelector('.one').innerHTML = localStorage.getItem('data')
+//let b = localStorage.getItem('data') 
+//b = JSON.parse(b)
+//console.log(b[2]);
+//console.log(typeof b);
+//console.log(localStorage.getItem('data'));
+
+// let a = [1,2,3]
+// let btn = document.querySelector('.plus')
+// btn.onclick =()=> {
+// localStorage.setItem('data', JSON.stringify(a))
+// document.querySelector('.one').innerHTML = localStorage.getItem('data')
+// let b = localStorage.getItem('data')
+// console.log(b);
+// b = JSON.parse(b)
+// console.log(b);
+// console.log(typeof b);
+// }
+
+let a = new XMLHttpRequest()
+a.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+        mufunc(this.responseText)
+
+    }
+}
+a.open('GET','https://automarine25.ru/')
+a.send()
+function mufunc(data){
+    console.log(data);
+}
